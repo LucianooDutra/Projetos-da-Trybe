@@ -1,0 +1,111 @@
+/* zerei toda as configurações da pag web */
+* {
+  padding: '';
+  margin: '';
+}
+
+/* conf meu titulo */
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* conf meus buttons */
+button {
+  width: 25px;
+  height: 25px;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+/* como tive que refazer o item 2 por conta do item 12, não preciso mais das minhas classes de cores */
+/* .cor1 {
+  background-color: black;
+  border: 1px solid black;
+}
+
+.cor2 {
+  background-color: blue;
+  border: 1px solid black;
+}
+
+.cor3 {
+  background-color: red;
+  border: 1px solid black;
+}
+
+.cor4 {
+  background-color: green;
+  border: 1px solid black;
+} */
+
+/* div que carrega as conf dos pixels, deixando próximos */
+div .divNova {
+  width: auto;
+  height: 40px;
+}
+
+/* item 5 */
+/* conf os meus pixels de acordo com o que se pede*/
+div.pixel {
+  display: inline-block;
+  border: 1px solid black;
+  width: 40px;
+  height: 40px;
+}
+
+/* classe que fica em todas os botões em uma div*/
+.botoes {
+  display: block;
+  padding: 5px;
+  text-align: center;
+}
+
+/* classe pra ficar dentro de cada div dos botões */
+.botoes2 {
+  display: inline-block;
+  padding: 15px;
+}
+
+/* conf de toda a minha paleta de cores */
+#color-palette {
+  display: block;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 20px;
+  padding-top: 40px;
+}
+
+/* conf minha paleta de cores pra cada cor unitária */
+div.color {
+  display: inline-block;
+  align-items: center;
+  margin: 10px;
+  padding: 25px;
+}
+
+/* conf do id pixel-board que fica dentro dos pixels, sendo essa conf como um bloco todo */
+#pixel-board {
+  display: block;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 20px;
+}
+
+/* conf do botão limpar */
+#clear-board {
+  width: 70px;
+  height: 25px;
+}
+
+/* conf do input */
+#board-size {
+  width: 70px;
+  height: 20px;
+}
+
+/* conf do botão VQV */
+#generate-board {
+  width: 70px;
+  height: 25px;
+}

@@ -1,0 +1,39 @@
+body {
+  background-color: #A2DEBD;
+  padding: 10px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-style: italic;
+  letter-spacing: 1px;
+}
+
+button {
+  font-style: italic;
+  letter-spacing: 2px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 25px;
+  background-color: #8384DF;
+}
+
+.selected {
+  background-color: gray;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+#digita {
+  padding: 30px;
+}
+
+#funcoes {
+padding-top: 15px;
+padding-bottom: 15px;
+}

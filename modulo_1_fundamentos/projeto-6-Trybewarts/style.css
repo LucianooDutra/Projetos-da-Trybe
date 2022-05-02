@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+/* Item 1 */
+.header {
+  background-color: rgb(50, 167, 145);
+  display: flex;
+  padding: 15px;
+
+  /* Item 3 */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .trybewarts-header-logo {
+  width: 70px;
+}
+
+#trybewarts-header-title {
+  font-size: 30px;
+}
+
+/* Item 3 */
+.trybewarts-login {
+  display: flex;
+}
+
+/* Estilização button header */
+.header button {
+  background-color: rgb(92, 10, 168);
+  color: white;
+  font-weight: 600;
+  align-items: center;
+  padding: 7px 50px;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Item 5 */
+main {
+  display: flex;
+  margin: 10px;
+}
+
+#evaluation-form {
+  display: flex;
+  width: 675px;
+  flex-direction: column;
+}
+
+/* Item 7 largura da logo */
+#trybewarts-forms-logo {
+  height: 500px;
+  align-content: center;
+}
+
+aside {
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+
+  /* item 10: extra - flex-direction usado para definir o eixo principal como vertical */
+}
+
+/* Item 10: flex-direction usado pra definir o eixo main como principal */
+.form .form-grid {
+  width: 500px;
+
+  /* defini a largura da sessão na largura do formulário */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  /* espaçamento entre os elementos */
+  padding: 30px 20px 20px 0;
+
+  /* Coloquei um espaçamento so pra dar uma centralizada */
+}
+
+/* linha de separação com uma margim de 20px, borda preta solida de 1px */
+hr {
+  margin: 20px;
+  border: 1px solid black;
+}
+
+/* item 12 */
+.form-family {
+  display: flex;
+  flex-direction: column;
+
+  /* define o eixo principal como vertical */
+}
+
+.form-family div {
+  margin-bottom: 20px;
+
+  /* define o margin-bottom das div como 20px */
+}
+
+/* Item 13, criei novo form2 pra armazenar espaço da "qual sua familia" e "conteudo" */
+
+/* assim da pra moficicar separadamente os dois, sem modificar a 1° parte do formulário */
+.form2 {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+/* Item 13 */
+.conteudoCheckbox {
+  display: flex;
+  flex-flow: row wrap;
+  width: 450px;
+
+  /* defini um tamanho especifico só pra classe do checkbox */
+  padding-right: 100px;
+
+  /* espaçamento lateral direita */
+  padding-left: 60px;
+
+  /* espaçamento lateral esquerda */
+}
+
+/* Item 14 */
+.form-rate {
+  display: flex;
+
+  /* define o container form-rate como flex assim colocando os filhos em linha */
+  margin-bottom: 20px;
+
+  /* define uma margem inferior de 20px */
+}
+
+.form-rate .radio-rate {
+  margin: 0 10px;
+
+  /* define uma margem direita e esquerda de 10px */
+}
+
+/* item 15 */
+.textArea {
+  display: flex;
+  flex-flow: column;
+}
+
+.textArea textarea {
+  margin-top: 10px;
+  border: none;
+
+  /* deixar espaçamento entre o nome "deixe seu comentário e a caixa do textarea */
+}
+
+/* Item 16 */
+.form-checkbox {
+  display: flex;
+  align-items: center;
+
+  /* define o alinhamento dos filhos de form-checkbox como o centro do eixo cruzado */
+}
+
+.form-checkbox label {
+  margin-right: 10px;
+
+  /* deixa um espaçamento entre a label e o checkbox */
+}
+
+/* item 17 */
+#submit-btn {
+  margin-top: 20px;
+
+  /* espaçamento entre button e texto acima */
+  background-color: rgb(92, 10, 168);
+  color: white;
+  font-weight: 600;
+
+  /* texto fica em negrito */
+  align-items: center;
+  padding: 10px 313px;
+
+  /* espaçamento dentro da caixa de background do texto enviar */
+  text-decoration: none;
+  border-radius: 6px;
+  border: none;
+
+  /* tira a borda do button */
+  cursor: pointer;
+
+  /* muda o cursor ao passar o mouse por cima */
+}
+
+/* Item 19 */
+#footer {
+  background-color: rgb(75, 75, 75);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 50px;
+
+  /* distância entre o texto e a caixa do background */
+}
+
+/* Item 20 */
+.area {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 20px 0;
+}
+
+.area #counter {
+  align-self: flex-end;
+  margin-right: 5px;
+}

@@ -1,0 +1,53 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #acb4ea;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  width: 70% auto;
+  margin-top: 50px;
+  color: #2e313d;
+}
+
+.todaPag {
+  margin: 10%;
+  padding: 40px;
+  border: none;
+  border-radius: 5px;
+  background-color: #5a618d;
+  box-shadow: 10px 5px 15px gray;
+}
+
+.ball {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  margin: 10px;
+  border-radius: 100%;
+  border: 2px solid black;
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+button {
+  margin-top: 70px;
+  font-weight: bold;
+  padding: 10px 40px;
+  font-size: 15px;
+  background-color: #383e53;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+/* quando passa o cursor do mouse sobre o botão ele muda de cor */
+button:hover {
+  background-color: #797ea8;
+}
