@@ -4,6 +4,11 @@
 }
 
 body {
+  background-image: url(https://c.wallhere.com/photos/33/3d/3840x2561_px_colors_galaxy_glow_NASA_nebula_Pink_planets-1733101.jpg!d);
+  background-size: cover;
+}
+
+body {
   background-color: #acb4ea;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
@@ -20,6 +25,7 @@ body {
   border-radius: 5px;
   background-color: #5a618d;
   box-shadow: 10px 5px 15px gray;
+  opacity: 0.95;
 }
 
 .ball {

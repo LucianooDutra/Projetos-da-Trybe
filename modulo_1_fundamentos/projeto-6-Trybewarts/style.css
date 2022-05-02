@@ -45,13 +45,17 @@
 /* Item 5 */
 main {
   display: flex;
-  margin: 10px;
+  /* margin: 10px; */
+  background-image: url(https://c.wallhere.com/photos/b4/fc/1920x1080_px_And_architecture_artistic_buildings_castle_clouds_college-1666577.jpg!d);
+    background-size: cover;
+    color:rgb(190, 190, 190);
 }
 
 #evaluation-form {
   display: flex;
   width: 675px;
   flex-direction: column;
+  margin: 10px;
 }
 
 /* Item 7 largura da logo */
@@ -205,7 +209,7 @@ hr {
   color: white;
   text-align: center;
   padding: 10px;
-  margin-top: 50px;
+  /* margin-top: 50px; */
 
   /* distância entre o texto e a caixa do background */
 }

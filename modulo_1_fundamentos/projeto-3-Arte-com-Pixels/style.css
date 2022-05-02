@@ -4,6 +4,11 @@
   margin: '';
 }
 
+body {
+  background-image: url(https://c.wallhere.com/photos/40/9e/brush_palette_paint_art-578186.jpg!d);
+  background-size: cover;
+}
+
 /* conf meu titulo */
 h1 {
   text-align: center;
