@@ -10,6 +10,8 @@ Repositório feito pra mostrar os projetos que desenvolvi durante todo o curso d
 
 4° Módulo de ciência da computação
 
+==================================================================
+
 1° Módulo de fundamentos do desenvolvimento web
 
  Internet
@@ -36,6 +38,8 @@ para aplicar estilos em marcações HTML.
 Introduzir os conceitos da programação estruturada.
 Utilizar de forma eficiente os recursos básicos do Javascript.
 
+==================================================================
+
 2° Módulo de desenvolvimento Front-end
 
 HTML
@@ -56,6 +60,8 @@ Desenvolver componentes React testáveis, manipulando estado
 nos componentes e globalmente usando ferramentas como Redux,
 ContextAPI e React Hooks, e bibliotecas RTL para testar componentes
 síncronos e assíncronos.
+
+==================================================================
 
 3° Módulo de desenvolvimento Back-end
 
@@ -82,6 +88,8 @@ no desenvolvimento de aplicações web.
  Deploy
 Publicar uma web app em um ambiente de produção,
 utilizando boas práticas de versionamento e segurança.
+
+==================================================================
 
 4° Módulo de ciência da computação
 
