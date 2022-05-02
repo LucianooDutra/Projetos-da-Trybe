@@ -3,8 +3,11 @@
 Repositório feito pra mostrar os projetos que desenvolvi durante todo o curso da Trybe, de acordo com cada módulo.
 
 1° Módulo de fundamentos do desenvolvimento web
+
 2° Módulo de desenvolvimento Front-end
+
 3° Módulo de desenvolvimento Back-end
+
 4° Módulo de ciência da computação
 
 1° Módulo de fundamentos do desenvolvimento web
