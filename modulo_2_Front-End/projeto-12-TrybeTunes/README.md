@@ -198,7 +198,6 @@ Agora que está tudo pronto, você poderá exibir a lista de músicas do álbum 
       O seu navegador não suporta o elemento <code>audio</code>.
   </audio>
   ```
-  **Importante:** lembre-se de colocar o atributo `data-testid="audio-component"` na tag `audio` de cada música listada.
 
 ![requisito-7](images/requisito7.gif)
 

@@ -70,17 +70,6 @@ Criar a tela de login contendo as informações de nome e email, onde a pessoa q
   * O campo de texto para o email deve possuir o atributo `data-testid` com o valor `input-gravatar-email`
   * O botão "Play" que leva a pessoa ao jogo deve possuir o atributo `data-testid` com o valor `btn-play`
 </details>
-<br /><details>
-  <summary><strong>O que será verificado</strong></summary>
-
-  * Será validado se é possível escrever o nome da pessoa jogadora
-  * Será validado se é possível escrever o email da pessoa jogadora
-  * Será validado se o botão "Play" está desabilitado quando a pessoa jogadora não preencher nenhum campo
-  * Será validado se o botão "Play" está desabilitado quando a pessoa jogadora escrever apenas o nome
-  * Será validado se o botão "Play" está desabilitado quando a pessoa jogadora escrever apenas o email
-  * Será validado se o botão "Play" está habilitado quando a pessoa jogadora preencher os campos de nome e email
-</details>
-
 ---
 
 ## 2. Crie o botão de iniciar o jogo
@@ -97,12 +86,6 @@ Criar a tela de login contendo as informações de nome e email, onde a pessoa q
   * O _token_ deve ser armazenado e enviado em todas as requisições seguintes.
   * Salve no `localStorage` o valor do _token_ recebido na API do Trivia, utilizando a chave `token`.
 </details>
-<br /><details>
-  <summary><strong>O que será verificado</strong></summary>
-
-  * Será validado se ao clicar no botão "Play" o jogo é iniciado salvando um token de jogador
-</details>
-
 ---
 
 ## 3. Crie um botão que leva a pessoa para tela de configuração
@@ -117,13 +100,6 @@ Criar a tela de login contendo as informações de nome e email, onde a pessoa q
   * O botão que leva a pessoa a tela de configurações deve possuir o atributo `data-testid` com o valor `btn-settings`
   * A tela de configurações deve possuir um título com o atributo `data-testid` contendo o valor `settings-title`
 </details>
-<br /><details>
-  <summary><strong>O que será verificado</strong></summary>
-
-  * Será validado se o botão existe na página
-  * Será validado se a tela de configurações possui um título
-</details>
-
 ---
 
 ## 4. Desenvolva testes para atingir 90% de cobertura da tela de Login
@@ -140,13 +116,6 @@ Criar a tela de login contendo as informações de nome e email, onde a pessoa q
   * Os testes criados por você não irão influenciar os outros requisitos no avaliador. Você deverá desenvolver seus testes unitários/integração usando a biblioteca React Testing Library, enquanto o avaliador usará a biblioteca [Cypress](https://docs.cypress.io/) para avaliar os requisitos, inclusive os de cobertura.
   * Para os testes passarem é necessário que a página de Login tenha o caminho `src/pages/Login.js`
 </details>
-<br /><details>
-  <summary><strong>O que será verificado</strong></summary>
-
-  * Será validado se ao executar `npm run test-coverage` é obtido os seguintes resultados:
-      * `% Funcs` e `% Lines` da linha `Login` é maior ou igual a 90.
-</details>
-
 ---
 
 ## Tela de jogo
@@ -166,15 +135,6 @@ Criar a tela de login contendo as informações de nome e email, onde a pessoa q
   * O nome da pessoa em um elemento que deve possuir o atributo `data-testid` com o valor `header-player-name`
   * O placar zerado em um elemento que deve possuir o atributo `data-testid` com o valor `header-score`
 </details>
-
-<br /><details>
-  <summary><strong>O que será verificado</strong></summary>
-
-  * Será validado se a imagem do Gravatar está presente no header
-  * Será validado se o nome da pessoa está presente no header
-  * Será validado se o placar zerado está presente no header
-</details>
-
 ---
 
 ## 6. Crie a página de jogo que deve conter as informações relacionadas à pergunta
@@ -205,19 +165,6 @@ Criar a tela de login contendo as informações de nome e email, onde a pessoa q
     * Dica: utilize botões (`<button/>`) para as alternativas
   </details>
 </details>
-
-<br /><details>
-  <summary><strong>O que será verificado</strong></summary>
-
-  * Será validado se o token inválido é excluído e a aplicação é redirecionada
-  * Será validado se as respostas da API são tratadas corretamente
-  * Será validado se a categoria da pergunta está presente
-  * Será validado se o texto da pergunta está presente
-  * Será validado se as alternativas estão presentes
-  * Será validado se a quantidade de alternativas corretas é 1
-  * Será validado se as alternativas estão posicionadas em ordem aleatória
-</details>
-
 ---
 
 ## 7. Desenvolva o estilo que, ao clicar em uma resposta, a correta deve ficar verde e as incorretas, vermelhas
@@ -232,16 +179,6 @@ Criar a tela de login contendo as informações de nome e email, onde a pessoa q
   * Utilize a propriedade css `border` com o valor `3px solid rgb(6, 240, 15)` para a alternativa correta.
   * Utilize a propriedade css `border` com o valor `3px solid red` para as alternativas incorretas.
 </details>
-
-<br /><details>
-  <summary><strong>O que será verificado</strong></summary>
-
-  * Será validado se a cor da alternativa correta é "rgb(6, 240, 15)" ao acertar a questão
-  * Será validado se a cor das alternativas incorretas é definida como "red" ao acertar a questão.
-  * Será validado se a cor da alternativa correta é "rgb(6, 240, 15)" ao errar a questão
-  * Será validado se a cor das alternativas incorretas é definida como "red" ao errar a questão
-</details>
-
 ---
 
 ## 8. Desenvolva um timer onde a pessoa que joga tem 30 segundos para responder
@@ -260,14 +197,6 @@ Criar a tela de login contendo as informações de nome e email, onde a pessoa q
 
   :bulb: **Dica**: Lembre-se do `setTimeout` e do `setInterval`
 </details>
-
-<br /><details>
-  <summary><strong>O que será verificado</strong></summary>
-
-  * Será validado se é possível aguardar 5 segundos e responder a alternativa correta
-  * Será validado se ao aguardar mais de 30 segundos para responder, todos botões estão desabilitados
-</details>
-
 ---
 
 ## 9. Crie o placar com as seguintes características:
@@ -284,14 +213,6 @@ Criar a tela de login contendo as informações de nome e email, onde a pessoa q
   * Respostas erradas não devem somar ao placar
   * A fórmula para cálculo dos pontos por pergunta é: `10 + (timer * dificuldade)`, onde timer é o tempo restante no contador de tempo e dificuldade é `hard: 3, medium: 2, easy: 1`, dependendo da pergunta. :bulb: Exemplo: Se no momento da resposta correta o timer estiver contando 17 segundos, e a dificuldade da pergunta é 2 (média), a pontuação deve ser: `10 + (17 * 2) = 44`
 </details>
-
-<br /><details>
-  <summary><strong>O que será verificado</strong></summary>
-
-   * Será validado se os pontos são somados ao acertar uma questão
-   * Será validado se os pontos não são somados ao errar uma questão
-</details>
-
 ---
 
 ## 10. Crie um botão de `Next` que apareça após a resposta ser dada
@@ -306,15 +227,6 @@ Criar a tela de login contendo as informações de nome e email, onde a pessoa q
   * O botão "Next" deve possuir o atributo `data-testid` com o valor `btn-next`
   * Ao clicar nesse botão, a próxima pergunta deve aparecer na tela
 </details>
-
-<br /><details>
-  <summary><strong>O que será verificado</strong></summary>
-
-  * Será validado se o botão "Next" não existe no início do jogo
-  * Será validado se o botão "Next" está presente quando a pergunta é respondida corretamente
-  * Será validado se o botão "Next" está presente quando a pergunta é respondida incorretamente
-</details>
-
 ---
 
 ## 11. Desenvolva o jogo de forma que a pessoa que joga deve responder 5 perguntas no total
@@ -331,16 +243,6 @@ Criar a tela de login contendo as informações de nome e email, onde a pessoa q
   * Para perguntas com type:"boolean", mostrar somente 2 campos (um para cada resposta possível)
   * Para perguntas com type:"multiple", mostrar a quantidade necessária de campos (um para cada resposta possível)
 </details>
-
-<br /><details>
-  <summary><strong>O que será verificado</strong></summary>
-
-  * Será validado se ao clicar no botão "Próxima", uma nova pergunta é exibida
-  * Será validado se os pontos são somados de forma correta ao acertar todas as respostas
-  * Será validado se os pontos são somados de forma correta ao errar todas as respostas
-  * Será validado se a pessoa usuária é redirecionada para a tela de _feedback_ após a quinta pergunta
-</details>
-
 ---
 
 ## Tela de feedback
@@ -360,15 +262,6 @@ Criar a tela de login contendo as informações de nome e email, onde a pessoa q
   * O nome da pessoa em um elemento que deve possuir o atributo `data-testid` com o valor `header-player-name`
   * O placar com o valor **atual** em um elemento que deve possuir o atributo `data-testid` com o valor `header-score`
 </details>
-
-<br /><details>
-  <summary><strong>O que será verificado</strong></summary>
-
-  * Será validado se a imagem do Gravatar está presente no header
-  * Será validado se o nome da pessoa está presente no header
-  * Será validado se o placar com o valor atual está presente no header
-</details>
-
 ---
 
 ## 13. Crie a mensagem de _feedback_ para ser exibida a pessoa usuária
@@ -384,15 +277,6 @@ Criar a tela de login contendo as informações de nome e email, onde a pessoa q
   * A mensagem deve ser "Well Done!" caso a pessoa acerte 3 perguntas ou mais
   * O elemento da mensagem de _feedback_ deve possuir o atributo `data-testid` com o valor `feedback-text`
 </details>
-
-<br /><details>
-  <summary><strong>O que será verificado</strong></summary>
-
-  * Será validado se ao acertar menos de 3 perguntas a mensagem de _feedback_ é "Could be better..."
-  * Será validado se ao acertar 3 perguntas a mensagem de _feedback_ é "Well Done!"
-  * Será validado se ao acertar mais de 3 perguntas a mensagem de _feedback_ é "Well Done!"
-</details>
-
 ---
 
 ## 14. Exiba as informações relacionadas aos resultados obtidos para a pessoa usuária
@@ -409,15 +293,6 @@ Criar a tela de login contendo as informações de nome e email, onde a pessoa q
   * Os elementos com os `data-testid` devem possuir apenas o número
   * No `estado do redux` as chaves score e assertions devem ser do tipo number
 </details>
-
-<br /><details>
-  <summary><strong>O que será verificado</strong></summary>
-
-  * Será validado se o número exibido é correto quando a pessoa usuária não acerta nenhuma pergunta
-  * Será validado se o número exibido é correto quando a pessoa usuária acerta 2 perguntas
-  * Será validado se o número exibido é correto quando a pessoa usuária acerta 4 perguntas
-</details>
-
 ---
 
 ## 15. Crie a opção para a pessoa jogadora poder jogar novamente
@@ -432,13 +307,6 @@ Criar a tela de login contendo as informações de nome e email, onde a pessoa q
   * Ao clicar no botão "Play Again", a pessoa deve ser redirecionada para a tela de início (login)
   * O botão para "Play Again" deve possuir o atributo `data-testid` com o valor `btn-play-again`
 </details>
-
-<br /><details>
-  <summary><strong>O que será verificado</strong></summary>
-
-  * Será validado se a pessoa é redirecionada para tela inicial ao clicar no botão "Play Again"
-</details>
-
 ---
 
 ## 16. Crie a opção para a pessoa jogadora poder visualizar a tela de _ranking_
@@ -454,13 +322,6 @@ Criar a tela de login contendo as informações de nome e email, onde a pessoa q
   * O botão para ir para a tela de _ranking_ deve possuir o atributo `data-testid` com o valor `btn-ranking`
   * A tela de _ranking_ deve possuir um título com o atributo `data-testid` contendo o valor `ranking-title`
 </details>
-
-<br /><details>
-  <summary><strong>O que será verificado</strong></summary>
-
-  * Será validado se ao clicar no botão "Ranking" a pessoa é redirecionada para tela de ranking
-</details>
-
 ---
 
 ## 17. Desenvolva testes para atingir 90% de cobertura da tela de Feedbacks
@@ -477,14 +338,6 @@ Criar a tela de login contendo as informações de nome e email, onde a pessoa q
   * Os testes criados por você não irão influenciar os outros requisitos no avaliador. Você deverá desenvolver seus testes unitários/integração usando a biblioteca React Testing Library, enquanto o avaliador usará a biblioteca [Cypress](https://docs.cypress.io/) para avaliar os requisitos, inclusive os de cobertura.
   * Para os testes passarem é necessário que a página de Feedbacks tenha o caminho `src/pages/Feedback.js`
 </details>
-
-<br /><details>
-  <summary><strong>O que será verificado</strong></summary>
-
-  * Será validado se ao executar `npm run test-coverage` é obtido os seguintes resultados:
-      * `% Funcs` e `% Lines` da linha `Feedback` é maior ou igual a 90.
-</details>
-
 ---
 
 ## Tela de ranking
@@ -503,13 +356,6 @@ Criar a tela de login contendo as informações de nome e email, onde a pessoa q
   * Esse botão deve possuir o atributo `data-testid` com o valor `btn-go-home`
   * Esse botão deve enviar a pessoa para o início (tela de preenchimento dos dados)
 </details>
-
-<br /><details>
-  <summary><strong>O que será verificado</strong></summary>
-
-  * Será validado se ao clicar no botão a pessoa volta para a tela inicial
-</details>
-
 ---
 
 ## 19. Crie o conteúdo da tela de _ranking_
@@ -527,15 +373,6 @@ Criar a tela de login contendo as informações de nome e email, onde a pessoa q
   * O ranking deve ser armazenado no navegador através do `localStorage`.
   * Leia a seção [Observações técnicas](#observações-técnicas) para mais detalhes
 </details>
-
-<br /><details>
-  <summary><strong>O que será verificado</strong></summary>
-
-  * Será validado se existe uma pessoa no _ranking_
-  * Será validado se existem duas pessoas no _ranking_
-  * Será validado se o _ranking_ é ordenado pela pontuação
-</details>
-
 ---
 
 ## 20. Desenvolva testes para atingir 90% de cobertura da tela de Ranking
@@ -552,14 +389,6 @@ Criar a tela de login contendo as informações de nome e email, onde a pessoa q
   * Os testes criados por você não irão influenciar os outros requisitos no avaliador. Você deverá desenvolver seus testes unitários/integração usando a biblioteca React Testing Library, enquanto o avaliador usará a biblioteca [Cypress](https://docs.cypress.io/) para avaliar os requisitos, inclusive os de cobertura.
   * Para os testes passarem é necessário que a página de Ranking tenha o caminho `src/pages/Ranking.js`
 </details>
-
-<br /><details>
-  <summary><strong>O que será verificado</strong></summary>
-
-  * Será validado se ao executar `npm run test-coverage` é obtido os seguintes resultados:
-      * `% Funcs` e `% Lines` da linha `Ranking` é maior ou igual a 90.
-</details>
-
 ---
 
 ## Testes da tela de jogo
@@ -578,14 +407,6 @@ Criar a tela de login contendo as informações de nome e email, onde a pessoa q
   * Os testes criados por você não irão influenciar os outros requisitos no avaliador. Você deverá desenvolver seus testes unitários/integração usando a biblioteca React Testing Library, enquanto o avaliador usará a biblioteca [Cypress](https://docs.cypress.io/) para avaliar os requisitos, inclusive os de cobertura.
   * Para os testes passarem é necessário que a página de Jogo tenha o caminho `src/pages/Game.js`
 </details>
-
-<br /><details>
-  <summary><strong>O que será verificado</strong></summary>
-
-  * Será validado se ao executar `npm run test-coverage` é obtido os seguintes resultados:
-      * `% Funcs` e `% Lines` da linha `Game` é maior ou igual a 90.
-</details>
-
 ---
 
 ## Testes de cobertura da aplicação
@@ -603,13 +424,5 @@ Criar a tela de login contendo as informações de nome e email, onde a pessoa q
 
   * Os testes criados por você não irão influenciar os outros requisitos no avaliador. Você deverá desenvolver seus testes unitários/integração usando a biblioteca React Testing Library, enquanto o avaliador usará a biblioteca [Cypress](https://docs.cypress.io/) para avaliar os requisitos, inclusive os de cobertura.
 </details>
-
-<br /><details>
-  <summary><strong>O que será verificado</strong></summary>
-
-  * Será validado se ao executar `npm run test-coverage` é obtido o seguinte resultado:
-      * `% Branch` da linha `All files` é maior ou igual a 95.
-</details>
-
 ---
 

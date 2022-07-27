@@ -94,14 +94,6 @@ Crie uma página para gerenciar a carteira de gastos em diversas moedas e que tr
 
 - O componente deve se chamar `Wallet` e estar localizado na pasta `src/pages`, no arquivo `Wallet.js`.
 
-<br /><details>
-  <summary><strong>O que será verificado</strong></summary><br />
-
-- A rota para esta página é `/carteira`.
-- O componente se chama Wallet e está localizado na pasta `src/pages`.
-- Não é renderizado o input que possui o `data-testid="email-input"`.
-</details>
-
 ---
 
 ## Header
@@ -127,13 +119,6 @@ Crie uma página para gerenciar a carteira de gastos em diversas moedas e que tr
   - Adicione o atributo `data-testid="header-currency-field"` neste elemento
 </details><br />
 
-<details>
-  <summary><strong>O que será verificado</strong></summary>
-
-- O elemento com o `data-testid="email-field"` renderiza o email salvo no estado global.
-- O elemento com o `data-testid="total-field"` inicialmente renderiza o valor `0`.
-- O elemento com o `data-testid="header-currency-field` renderiza o texto `BRL`.
-</details>
 
 ---
 
@@ -151,13 +136,6 @@ Crie uma página para gerenciar a carteira de gastos em diversas moedas e que tr
 
   - A chave `currencies` do estado global deve ser um array.
 </details><br />
-
-<details>
-  <summary><strong>O que será verificado</strong></summary>
-
-  - A API é chamada com o end point `https://economia.awesomeapi.com.br/json/all`
-  - O valor da chave `currencies` no estado global é um array que possui as siglas das moedas que vieram da API.
-</details>
 
 ---
 
@@ -204,20 +182,6 @@ Crie uma página para gerenciar a carteira de gastos em diversas moedas e que tr
 
   ![image](addItem.gif)
 </details><br />
-
-<details>
-  <summary><strong>O que será verificado</strong></summary>
-
-  - O campo para adicionar o valor da despesa possui o `data-testid="value-input"`.
-  - O campo para adicionar a descrição da despesa possui o `data-testid="description-input"`.
-  - O campo para selecionar em qual moeda será registrada a despesa é um `<select>` com uma label com o texto `moeda`.
-  - O campo para selecionar em qual moeda será registrada a despesa possui options com os valores iguais ao do array localizado na chave currencies do estado global.
-  - O campo para selecionar qual método de pagamento será utilizado possui o `data-testid="method-input"`.
-  - O campo para selecionar qual método de pagamento será utilizado possui options com os valores `Dinheiro`, `Cartão de crédito` e `Cartão de débito`.
-  - O campo para selecionar uma categoria (tag) da despesa possui o `data-testid="tag-input"`
-  - O campo para selecionar uma categoria (tag) da despesa possui options com os valores `Alimentação`, `Lazer`, `Trabalho`, `Transporte` e `Saúde`.
-</details>
-
 ---
 
 ## 6. Salve todas as informações do formulário no estado global
@@ -342,17 +306,6 @@ Crie uma página para gerenciar a carteira de gastos em diversas moedas e que tr
       ```
     </details>
 </details><br />
-<details>
-  <summary><strong>O que será verificado</strong></summary>
-
-  - É renderizado um botão com o texto "Adicionar despesa".
-  - Ao clicar no botão "Adicionar despesa", é feita uma requisição a API.
-  - Ao clicar no botão "Adicionar despesa", é salva uma nova despesa na chave `expenses` do estado global, consequetemente atualizando o elemento com o `data-testid="total-field"`.
-  - Cada despesa tem um id.
-  - Ao clicar no botão "Adicionar despesa", os inputs voltam ao valor inicial, o input com o `data-testid="value-input"` contendo algum desses valores `0`, `"0"` ou `""`.
-  - Ao adicionar uma nova despesa, o elemento com o `data-testid="total-field"` é atualizado com a soma das despesas, levando em consideração a cotação localizada na chave `ask`.
-</details>
-
 ---
 
 ## Tabela de Gastos
@@ -371,13 +324,6 @@ Crie uma página para gerenciar a carteira de gastos em diversas moedas e que tr
     - Moeda de conversão;
     - Editar/Excluir.
 </details><br />
-
-<details>
-  <summary><strong>O que será verificado</strong></summary>
-
-- A tabela possui um cabeçalho com elementos `<th>` com os valores `Descrição`, `Tag`, `Método de pagamento`,`Valor`, `Moeda`, `Câmbio utilizado`, `Valor convertido`, `Moeda de conversão` e `Editar/Excluir`.
-</details>
-
 ---
 
 ## 8. Implemente a lógica para que a tabela seja alimentada pelo estado da aplicação
@@ -392,15 +338,6 @@ Crie uma página para gerenciar a carteira de gastos em diversas moedas e que tr
 
   - Utilize sempre o formato `0.00` (número - ponto - duas casas decimais).
 </details><br />
-
-<details>
-  <summary><strong>O que será verificado</strong></summary>
-
-  - A tabela é atualizada com as informações vindas da chave `expense` do estado global.
-  - A tabela possui um corpo com um elemento `<tr>` para cada despesa.
-  - O elemento `<tr>` possui elementos `<td>` com `Descrição`, `Tag`, `Método de pagamento`,`Valor`, `Moeda`, `Câmbio utilizado`, `Valor convertido`, `Moeda de conversão` de cada despesa.
-</details>
-
 ---
 
 ## 9. Crie um botão para deletar uma despesa da tabela contendo as seguintes características:
@@ -415,14 +352,6 @@ Crie uma página para gerenciar a carteira de gastos em diversas moedas e que tr
 * Ao ser clicado, o botão deleta a linha da tabela, alterando o estado global e o header.
 
 <br /><details>
-  <summary><strong>O que será verificado</strong></summary>
-
-- O botão se encontra no último elemento `<td>` de cada elemento `<tr>`.
-- O botão possui o `data-testid="delete-btn"`.
-- Ao clicar no botão, a despesa é removida do estado global e consequentemente da tabela.
-- Ao clicar no botão, a despesa total é atualizada no header, subtraindo o valor correspondente.
-</details>
-
 ---
 
 ## 10. Crie um botão para editar uma despesa da tabela contendo as seguintes características:
@@ -450,14 +379,3 @@ Crie uma página para gerenciar a carteira de gastos em diversas moedas e que tr
   - **Atenção**: o câmbio utilizado na edição deve ser o mesmo do cálculo feito na adição do gasto.
 </details><br />
 
-<details>
-  <summary><strong>O que será verificado</strong></summary>
-
-- O botão se encontra no último elemento `<td>` de cada elemento `<tr>`.
-- O botão possui o `data-testid="edit-btn"`.
-- Ao ser clicado, o formulário de adição passa a ser um formulário de edição.
-- Ao ser clicado, o botão com o texto `"Adicionar Despesa"` é alterado para `"Editar despesa"`.
-- Após editar uma despesa a chave `expenses` no estado global é atualizada com o novo valor.
-- A ordem das despesas é mantida após a edição.
-- O valor no campo com o `data-testid="total-field"` é atualizado após a edição de uma despesa.
-</details>
