@@ -1,0 +1,33 @@
+.footer-container {
+  align-items: center;
+  background-color: rgb(214, 90, 81, 0.3);
+  border-top: solid 5px rgb(214, 90, 81);
+  bottom: 0;
+  display: flex;
+  height: 70px;
+  justify-content: space-around;
+  position: fixed;
+  width: 100%;
+}
+
+.footer-button {
+  background-color: rgb(219, 166, 163);
+  border: solid 5px black;
+  border-radius: 10px;
+}
+
+.selected-footer {
+  background-color: rgb(214, 90, 81);
+}
+
+@media screen and ( min-width : 600px ) {
+
+  .footer-button {
+    height: 100px;
+    width: 100px;
+  }
+
+  .footer-container {
+    height: 120px;
+  }
+}

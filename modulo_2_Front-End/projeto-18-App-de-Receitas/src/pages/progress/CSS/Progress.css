@@ -1,0 +1,96 @@
+.progress-list-container {
+  align-items: center;
+  background-color: rgb(95, 143, 95, 0.6);
+  box-sizing: border-box;
+  display: flex;
+  justify-content: start;
+  overflow-x: scroll;
+  padding: 30px 0;
+  width: 100%;
+}
+
+.progress-list-inner-container {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  padding: 0 30px;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.progress-list-inner-container input {
+  display: none;
+}
+
+.progress-list-inner-container ul {
+  align-items: stretch;
+  display: flex;
+  flex-flow: column nowrap;
+  flex-grow: 1;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.label-check {
+  align-items: center;
+  border: solid 3px white;
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: white;
+  display: flex;
+  font-size: 1.4em;
+  font-weight: 700;
+  height: 80px;
+  justify-content: center;
+  margin: 5px 0;
+  padding: 5px;
+  width: 100%;
+}
+
+.finish-button-container {
+  align-items: center;
+  background-color: rgb(95, 143, 95, 0.3);
+  display: flex;
+  height: 80px;
+  justify-content: center;
+  width: 100%;
+}
+
+.finish-button {
+  background-color: rgb(214, 90, 81);
+  border: solid 5px white;
+  border-radius: 20px;
+  color: white;
+  font-family: Dancing Script , cursive;
+  font-size: 2.2em;
+  font-weight: 600;
+  height: 60px;
+  width: 50%;
+}
+
+.finish-button:disabled {
+  background-color: rgb(214, 90, 81, 0.6);
+  border: solid 5px rgb(255, 255, 255, 0.6);
+  color: rgb(255, 255, 255, 0.6);
+}
+
+.finish-button:active {
+  background-color: white;
+  border: solid 5px rgb(214, 90, 81);
+  color: rgb(214, 90, 81);
+}
+
+.label-checked {
+  background-color: rgb(214, 90, 81);
+}
+
+@media screen and ( min-width : 600px ) {
+
+  .label-check {
+    font-size: 2.5em;
+  }
+}

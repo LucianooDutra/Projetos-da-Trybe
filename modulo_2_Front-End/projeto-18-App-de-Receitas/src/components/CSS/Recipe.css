@@ -1,0 +1,94 @@
+.recipe-container {
+  align-items: center;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.upper-body-recipe {
+  align-items: center;
+  background-color: rgb(214, 90, 81);
+  color: white;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.recipe-category {
+  font-family: Dancing Script , cursive;
+  font-size: 2em;
+  margin-bottom: 0;
+}
+
+.recipe-name {
+  font-family: Dancing Script , cursive;
+  font-size: 4em;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.recipe-image {
+  width: 100%;
+}
+
+.details-button-container {
+  align-items: center;
+  background-color: rgb(95, 143, 95);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.details-button-container button {
+  background-color: rgb(173, 214, 173);
+  border: solid 3px white;
+  border-radius: 10px;
+  height: 50px;
+  margin: 20px 5px 0;
+  width: 50px;
+}
+
+.popUp-container {
+  align-items: center;
+  color: white;
+  display: flex;
+  font-size: 1.2em;
+  justify-content: center;
+  min-height: 30px;
+  width: 100%;
+}
+
+.instructions-container-details {
+  background-color: white;
+  border-bottom: solid 50px rgb(95, 143, 95);
+  box-sizing: border-box;
+  color: rgb(214, 90, 81);
+  font-size: 1.2em;
+  font-weight: 600;
+  padding: 20px;
+  width: 100%;
+}
+
+.instructions-container-details p {
+  margin-top: 10px;
+  text-align: justify;
+}
+
+@media screen and ( min-width : 600px ) {
+
+  .recipe-category {
+    font-size: 3.5em;
+  }
+
+  .recipe-name {
+    font-size: 7em;
+    margin-bottom: 50px;
+  }
+
+  .instructions-container-details {
+    font-size: 2em;
+  }
+}
