@@ -1,0 +1,195 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url('../images/papelParede2.jpg');
+  background-size: cover;
+  color: rgb(31, 76, 223);
+  min-height: 80vh;
+}
+
+.tituloH1 {
+  font-size: 50px;
+  padding: 40px;
+  text-align: center;
+}
+
+.Edit-addCard {
+  display: flex;
+  flex-flow: column;
+  padding-bottom: 60px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.novaCartaEPrevisualizacao {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  min-height: 350px;
+}
+
+/* Formulário */
+.Edit-addCard-Form {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 8px 5px 30px rgb(45, 195, 250);
+  color: rgb(31, 76, 223);
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+  min-height: 370px;
+  min-width: 350px;
+}
+
+.Edit-addCard-Form h2 {
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+  min-height: 250px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.form div {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+}
+
+.form textarea {
+  background-color: rgb(218, 214, 214);
+  border: none;
+  border-radius: 2px;
+}
+
+.form input {
+  background-color: rgb(218, 214, 214);
+  border: none;
+  border-radius: 2px;
+}
+
+.form select {
+  background-color: rgb(218, 214, 214);
+  border: none;
+  border-radius: 2px;
+}
+
+.Form-btnSubmit {
+  align-items: center;
+  background-color: rgb(31, 76, 223);
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 20px;
+  padding: 5px;
+  text-decoration: none;
+}
+
+/* Pré-visualização */
+.Edit-addCard-Card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 8px 5px 30px rgb(45, 195, 250);
+  color: rgb(31, 76, 223);
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+  min-height: 370px;
+  min-width: 350px;
+}
+
+.Edit-addCard-Card h2 {
+  text-align: center;
+}
+
+.Card-container {
+  background-color: rgb(204, 202, 202);
+  border: 5px solid rgb(83, 83, 83);
+  border-radius: 10px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+  min-height: 370px;
+  min-width: 350px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.Card-content {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+  min-height: 150px;
+}
+
+/* div de Filtros */
+.filtroGeral {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  font-size: 20px;
+  justify-content: space-evenly;
+  min-height: 100px;
+}
+
+.filtroGeral input {
+  background-color: rgb(218, 214, 214);
+  border: none;
+  border-radius: 2px;
+}
+
+.filtroGeral select {
+  background-color: rgb(218, 214, 214);
+  border: none;
+  border-radius: 2px;
+}
+
+.todasAsCartas {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 8px 5px 30px rgb(45, 195, 250);
+  color: rgb(31, 76, 223);
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+  min-height: 370px;
+  min-width: 350px;
+  padding-bottom: 30px;
+}
+
+.todasAsCartas h2 {
+  min-height: 70px;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.cardList {
+  align-content: space-around;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+.Card button {
+  align-items: center;
+  background-color: rgb(31, 76, 223);
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 20px;
+  padding: 5px;
+  text-decoration: none;
+  width: 200px;
+}

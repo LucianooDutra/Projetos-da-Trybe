@@ -1,0 +1,125 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-07-16T16:52:10.808Z",
+    "end": "2022-07-16T16:52:15.485Z",
+    "duration": 4677,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "583164cc-fd86-435e-b26b-e6ae97a1c5f0",
+      "title": "",
+      "fullFile": "cypress/integration/04.multipleFilters_spec.js",
+      "file": "cypress/integration/04.multipleFilters_spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7d03e251-7860-45c7-92ce-a7382cd18dca",
+          "title": "4 - Implemente múltiplos filtros numéricos",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Adicione dois filtros e verifique se a tabela foi atualizada com as informações filtradas",
+              "fullTitle": "4 - Implemente múltiplos filtros numéricos Adicione dois filtros e verifique se a tabela foi atualizada com as informações filtradas",
+              "timedOut": null,
+              "duration": 1725,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('table tr').should('have.length', ROWS_TOTAL);\ncy.addFilter('diameter', 'maior que', '9000');\ncy.get('table tr').should('have.length', FILTERED_ROWS);\ncy.addFilter('population', 'menor que', '1000000');\ncy.get('table tr').should('have.length', DOUBLE_FILTERED_ROWS);",
+              "err": {},
+              "uuid": "88541fc7-7b06-4f90-b134-df90adfe720d",
+              "parentUUID": "7d03e251-7860-45c7-92ce-a7382cd18dca",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Adicione três filtros e verifique se a tabela foi atualizada com as informações filtradas",
+              "fullTitle": "4 - Implemente múltiplos filtros numéricos Adicione três filtros e verifique se a tabela foi atualizada com as informações filtradas",
+              "timedOut": null,
+              "duration": 2252,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('table tr').should('have.length', ROWS_TOTAL);\ncy.addFilter('diameter', 'maior que', '9000');\ncy.get('table tr').should('have.length', FILTERED_ROWS);\ncy.addFilter('population', 'menor que', '1000000');\ncy.get('table tr').should('have.length', DOUBLE_FILTERED_ROWS);\ncy.addFilter('rotation_period', 'igual a', '23');\ncy.get('table tr').should('have.length', TRIPLE_FILTERED_ROWS);",
+              "err": {},
+              "uuid": "d1df0b52-15a4-4be9-9f8d-1f867f059f05",
+              "parentUUID": "7d03e251-7860-45c7-92ce-a7382cd18dca",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "88541fc7-7b06-4f90-b134-df90adfe720d",
+            "d1df0b52-15a4-4be9-9f8d-1f867f059f05"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3977,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

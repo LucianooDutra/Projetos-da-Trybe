@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Macondo&family=Roboto+Serif:ital,opsz,wght@0,8..144,100;0,8..144,200;0,8..144,300;0,8..144,400;0,8..144,500;0,8..144,600;0,8..144,700;1,8..144,100;1,8..144,200;1,8..144,300;1,8..144,400;1,8..144,500;1,8..144,600;1,8..144,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(
+    109.6deg,
+    rgba(223, 234, 247, 1) 11.2%,
+    rgba(244, 248, 252, 1) 91.1%
+  );
+  background-image: linear-gradient(
+    100deg,
+    rgba(141, 190, 134, 1) 13.6%,
+    rgba(230, 251, 198, 1) 65.3%,
+    rgba(255, 255, 255, 1) 108.8%
+  );
+  /* background-image: url('../img/dinheiro.jpg'); */
+  background-size: cover;
+  /* z-index: 1; */
+  /* opacity: 80%; */
+  color: #182c1f;
+}
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px 0px 30px 100px;
+  background-color: #083f1b;
+  color: rgb(216, 218, 218);
+  opacity: 90%;
+}
+
+header h1 {
+  font-size: 60px;
+}
+
+.divHeaderWallet {
+  height: 80px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.divHeaderWallet div {
+  display: flex;
+  justify-content: space-between;
+  font-size: 21px;
+}
+
+.divAddExpenseForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 200px 20px 30px 20px;
+  opacity: 95%;
+}
+
+.divAddExpenseForm form {
+  padding: 15px 25px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  font-size: 21px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px 3px #083f1b;
+  background-color: #3a7750;
+  font-weight: 800;
+}
+
+.divAddExpenseForm form label {
+  padding: 10px;
+  font-weight: bold;
+}
+
+.divAddExpenseForm form input {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #fafafa;
+  color: #182c1f;
+  cursor: pointer;
+  font-weight: bold;
+  width: 220px;
+}
+
+#AddValue {
+  width: 150px;
+}
+
+.divAddExpenseForm form select {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #fafafa;
+  color: #182c1f;
+  cursor: pointer;
+  font-weight: bold;
+  width: 220px;
+}
+
+#AddCurrency {
+  width: 150px;
+}
+
+.divAddExpenseForm form button {
+  background-color: #6ecf90;
+  background-image: linear-gradient(
+    100deg,
+    rgba(141, 190, 134, 1) 13.6%,
+    rgba(230, 251, 198, 1) 65.3%,
+    rgba(255, 255, 255, 1) 108.8%
+  );
+  color: #182c1f;
+  font-weight: 600;
+  padding: 7px 13px;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  width: 250px;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.btnDivAddExpense:hover {
+  background-image: radial-gradient(
+    circle farthest-corner at -1% 57.5%,
+    rgba(19, 170, 82, 1) 0%,
+    rgba(0, 102, 43, 1) 90%
+    );
+    color: rgb(183, 248, 183);
+}
+
+.divAddExpenseForm form button:active {
+  color: #182c1f;
+}
+
+.Expenses {
+  padding-top: 40px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: 21px;
+  width: 100%;
+}
+
+.Expenses table {
+  width: 85%;
+}
+
+.expenseTitle {
+  background-color: #3a7750;
+  color: #182c1f;
+  border-radius: 5px;
+}
+
+.expenseTitle tr th {
+  padding: 15px 20px;
+}
+
+.expensesTable {
+  background-image: linear-gradient(
+    100deg,
+    rgba(141, 190, 134, 1) 13.6%,
+    rgba(230, 251, 198, 1) 65.3%,
+    rgba(255, 255, 255, 1) 108.8%
+  );
+  /* border: 10px; */
+  text-align: center;
+}
+
+.expensesTable button {
+  background-color: #6ecf90;
+  font-weight: 600;
+  padding: 5px 8px;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  width: 115px;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.expensesTable button:hover {
+  background-color: #3a7750;
+  color: #b2e6c4;
+}
+
+.expensesTable button:active {
+  background-color: #3a7750;
+  color: #182c1f;
+}
+
+table {
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px 3px #083f1b;
+}

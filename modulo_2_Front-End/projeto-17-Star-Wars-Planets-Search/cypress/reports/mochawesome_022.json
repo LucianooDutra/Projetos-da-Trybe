@@ -1,0 +1,144 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-07-16T16:37:16.991Z",
+    "end": "2022-07-16T16:37:19.018Z",
+    "duration": 2027,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "4def3b39-141f-4593-b517-a7cbbf50f7b4",
+      "title": "",
+      "fullFile": "cypress/integration/02.filterByName_spec.js",
+      "file": "cypress/integration/02.filterByName_spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e16c8e4c-8dae-41e3-b698-9d097ff50468",
+          "title": "2 - Crie um filtro de texto para a tabela",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Filtre os planetas que possuem a letra \"o\" no nome",
+              "fullTitle": "2 - Crie um filtro de texto para a tabela Filtre os planetas que possuem a letra \"o\" no nome",
+              "timedOut": null,
+              "duration": 566,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.getByTestId(_dataTestIds.INPUT_FILTER_NAME).type('o');\ncy.get('table tr').should('have.length', ROWS_WITH_LETTER_O);\nconst planetNames = ['Coruscant', 'Dagobah', 'Endor', 'Hoth', 'Kamino', 'Naboo', 'Tatooine'];\nplanetNames.forEach(planet => {\n  cy.contains(planet);\n});",
+              "err": {},
+              "uuid": "c40a2d8f-d0de-4bce-91eb-8f6b7318ad89",
+              "parentUUID": "e16c8e4c-8dae-41e3-b698-9d097ff50468",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Filtre planetas que possuem a letra \"oo\" no nome",
+              "fullTitle": "2 - Crie um filtro de texto para a tabela Filtre planetas que possuem a letra \"oo\" no nome",
+              "timedOut": null,
+              "duration": 252,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.getByTestId(_dataTestIds.INPUT_FILTER_NAME).type('oo');\ncy.get('table tr').should('have.length', ROWS_WITH_LETTER_OO);\ncy.contains('Naboo');\ncy.contains('Tatooine');",
+              "err": {},
+              "uuid": "b2a45c7b-7821-47e8-a6f8-99a3356c3fa8",
+              "parentUUID": "e16c8e4c-8dae-41e3-b698-9d097ff50468",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Faça vários filtros em sequência",
+              "fullTitle": "2 - Crie um filtro de texto para a tabela Faça vários filtros em sequência",
+              "timedOut": null,
+              "duration": 500,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.getByTestId(_dataTestIds.INPUT_FILTER_NAME).type('o');\ncy.get('table tr').should('have.length', ROWS_WITH_LETTER_O);\nconst planetNames = ['Coruscant', 'Dagobah', 'Endor', 'Hoth', 'Kamino', 'Naboo', 'Tatooine'];\nplanetNames.forEach(planet => {\n  cy.contains(planet);\n});\ncy.getByTestId(_dataTestIds.INPUT_FILTER_NAME).type('o');\ncy.get('table tr').should('have.length', ROWS_WITH_LETTER_OO);\ncy.contains('Naboo');\ncy.contains('Tatooine');\ncy.getByTestId(_dataTestIds.INPUT_FILTER_NAME).clear();\ncy.get('table tr').should('have.length', ROWS_TOTAL);\nplanets.forEach(({\n  name\n}) => {\n  cy.contains(name);\n});",
+              "err": {},
+              "uuid": "a53f8b08-f37d-4bb4-9e0b-b61d829d9f5a",
+              "parentUUID": "e16c8e4c-8dae-41e3-b698-9d097ff50468",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c40a2d8f-d0de-4bce-91eb-8f6b7318ad89",
+            "b2a45c7b-7821-47e8-a6f8-99a3356c3fa8",
+            "a53f8b08-f37d-4bb4-9e0b-b61d829d9f5a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1318,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
