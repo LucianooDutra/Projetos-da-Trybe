@@ -3,6 +3,7 @@ import Header from '../components/Header';
 import MusicCard from '../components/MusicCard';
 import { getFavoriteSongs } from '../services/favoriteSongsAPI';
 import Carregando from '../components/Carregando';
+import '../css/favorites.css';
 
 class Favorites extends React.Component {
   state = {
@@ -58,12 +59,11 @@ class Favorites extends React.Component {
   render() {
     const { musicas } = this.state;
     return (
-      <div data-testid="page-favorites">
-        <Header />
-        <div>
+      <div className="page-favorites" data-testid="page-favorites">
+        <Header className="headerPageFavorites" />
+        <div className="AllMusicCards">
           {!musicas ? <Carregando /> : this.musica()}
         </div>
-        <p>Favorites</p>
       </div>
     );
   }

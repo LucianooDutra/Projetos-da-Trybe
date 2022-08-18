@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { addSong, removeSong } from '../services/favoriteSongsAPI';
 import Carregando from './Carregando';
+import '../css/album.css';
 
 class MusicCard extends React.Component {
     state = {
@@ -41,19 +42,24 @@ class MusicCard extends React.Component {
       musica: { trackName, previewUrl, collectionName, trackId }, image } = this.props;
     const { checked } = this.state;
     return (
-      <div>
-        <img src={ image } alt={ collectionName } />
-        <p>{trackName}</p>
-        <audio data-testid="audio-component" src={ previewUrl } controls>
-          <track kind="captions" />
-          O seu navegador não suporta o elemento
-          <code>
-            audio
-          </code>
-          .
-        </audio>
+      <div className="divMusicCard">
+        <div className="divMusicCard2">
+          <img src={ image } alt={ collectionName } />
+          <div className="divMusicCardInt">
+            <p>{trackName}</p>
+            <audio data-testid="audio-component" src={ previewUrl } controls>
+              <track kind="captions" />
+              O seu navegador não suporta o elemento
+              <code>
+                audio
+              </code>
+              .
+            </audio>
+          </div>
+        </div>
         <label htmlFor={ trackName }>
           <input
+            className="divMusicCardInput"
             type="checkbox"
             id={ trackName }
             data-testid={ `checkbox-music-${trackId}` }

@@ -20,14 +20,20 @@ class Header extends React.Component {
     header = () => {
       const { user } = this.state;
       return (
-        <div>
+        <div className="divPageSearchHeader">
           <div>
-            <h2 data-testid="header-user-name">{user.name}</h2>
+            <h2 data-testid="header-user-name">{`Welcome ${user.name}`}</h2>
           </div>
-          <div>
-            <Link data-testid="link-to-search" to="/search">Procurar</Link>
-            <Link data-testid="link-to-favorites" to="/favorites">Favoritas</Link>
-            <Link data-testid="link-to-profile" to="/profile">Perfil</Link>
+          <div className="divPageSearchHeaderLinks">
+            <div>
+              <Link data-testid="link-to-search" to="/search">Search</Link>
+            </div>
+            <div>
+              <Link data-testid="link-to-favorites" to="/favorites">Favorites</Link>
+            </div>
+            <div>
+              <Link data-testid="link-to-profile" to="/profile">Profile</Link>
+            </div>
           </div>
         </div>
       );

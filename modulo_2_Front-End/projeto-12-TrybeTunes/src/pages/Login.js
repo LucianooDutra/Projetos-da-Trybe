@@ -2,6 +2,7 @@ import React from 'react';
 import { Redirect } from 'react-router';
 import { createUser } from '../services/userAPI';
 import Carregando from '../components/Carregando';
+import '../css/login.css';
 
 class Login extends React.Component {
   state = {
@@ -51,26 +52,31 @@ class Login extends React.Component {
     }
 
     return (
-      <div data-testid="page-login">
-        <label htmlFor="NameLogin">
-          <input
-            data-testid="login-name-input"
-            type="text"
-            placeholder="Seu nome"
-            id="NameLogin"
-            className="NameLogin"
-            onChange={ this.countName }
-          />
-        </label>
-        <button
-          type="submit"
-          className="Form-btnSubmit"
-          data-testid="login-submit-button"
-          disabled={ disabled }
-          onClick={ this.getUser }
-        >
-          Entrar
-        </button>
+      <div className="formLogin" data-testid="page-login">
+        <h1>My songs</h1>
+        <div className="divLogin">
+          <div className="divInput">
+            <label htmlFor="NameLogin">
+              <input
+                data-testid="login-name-input"
+                type="text"
+                placeholder="Seu nome"
+                id="NameLogin"
+                className="NameLogin"
+                onChange={ this.countName }
+              />
+            </label>
+          </div>
+          <button
+            type="submit"
+            className="Form-btnSubmit"
+            data-testid="login-submit-button"
+            disabled={ disabled }
+            onClick={ this.getUser }
+          >
+            Entrar
+          </button>
+        </div>
       </div>
     );
   }

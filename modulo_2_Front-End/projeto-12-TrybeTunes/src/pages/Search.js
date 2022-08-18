@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Header from '../components/Header';
 import Carregando from '../components/Carregando';
 import searchAlbumsAPI from '../services/searchAlbumsAPI';
+import '../css/search.css';
 
 class Search extends React.Component {
   state = {
@@ -47,7 +48,7 @@ class Search extends React.Component {
   album = () => {
     const { nomeAlbum } = this.state;
     return (
-      <div>
+      <div className="divAlbum">
         {
           nomeAlbum
             .map(({ collectionId, artistName, collectionName, artworkUrl100 }) => (
@@ -56,10 +57,12 @@ class Search extends React.Component {
                 data-testid={ `link-to-album-${collectionId}` }
                 to={ `/album/${collectionId}` }
               >
-                <div>
+                <div className="albumInter">
                   <img src={ artworkUrl100 } alt={ collectionName } />
-                  <h4>{artistName}</h4>
-                  <h5>{collectionName}</h5>
+                  <div className="albumInterNames">
+                    <h4>{artistName}</h4>
+                    <h5>{collectionName}</h5>
+                  </div>
                 </div>
               </Link>
             ))
@@ -71,15 +74,17 @@ class Search extends React.Component {
   // Função que compara caso não seja encontrado nenhum nome de artista ou encontrado.
   // Se encontrado chama minha função do album, se não aparece o aviso de nenhum album encontrado.
   confirmarAlbum = () => {
-    const { name, state: { nomeAlbum } } = this;
+    const { state: { nomeAlbum } } = this;
     if (nomeAlbum) {
       return (
-        <>
-          <h2>{`Resultado de álbuns de: ${name}`}</h2>
-          { nomeAlbum.length > 0
-            ? this.album()
-            : <h2>Nenhum álbum foi encontrado</h2> }
-        </>
+        <div className="divAllAlbum">
+          {/* <h2>{`search results:  ${name}`}</h2> */}
+          <div className="divAlbum1">
+            { nomeAlbum.length > 0
+              ? this.album()
+              : <h2>Nenhum álbum foi encontrado</h2> }
+          </div>
+        </div>
       );
     }
   }
@@ -87,19 +92,21 @@ class Search extends React.Component {
   artista = () => {
     const { disabled, nomeArtista } = this.state;
     return (
-      <div>
-        <label htmlFor="BuscarNomeArtista">
-          <input
-          // Defini meu value como meu nomeArtista porque assim que clicar pra pesquisar ele irá apagar.
-            value={ nomeArtista }
-            data-testid="search-artist-input"
-            type="text"
-            placeholder="Nome do artista"
-            id="BuscarNomeArtista"
-            className="BuscarNomeArtista"
-            onChange={ this.countName }
-          />
-        </label>
+      <div className="divPageSearchLabelButton">
+        <div className="divPageSearchLabel">
+          <label htmlFor="BuscarNomeArtista">
+            <input
+            // Defini meu value como meu nomeArtista porque   assim que clicar pra pesquisar ele irá apagar.
+              value={ nomeArtista }
+              data-testid="search-artist-input"
+              type="text"
+              placeholder="Artist or band name"
+              id="BuscarNomeArtista"
+              className="BuscarNomeArtista"
+              onChange={ this.countName }
+            />
+          </label>
+        </div>
         <button
           type="submit"
           className="BotaoProcurarArtista"
@@ -107,7 +114,7 @@ class Search extends React.Component {
           disabled={ disabled }
           onClick={ this.buscarAlbum }
         >
-          Pesquisar
+          Search
         </button>
       </div>
     );
@@ -116,11 +123,10 @@ class Search extends React.Component {
   render() {
     const { carregando } = this.state;
     return (
-      <div data-testid="page-search">
+      <div className="divPageSearch" data-testid="page-search">
         <Header />
         { this.artista() }
         { carregando ? <Carregando /> : this.confirmarAlbum() }
-        <p>Search</p>
       </div>
     );
   }

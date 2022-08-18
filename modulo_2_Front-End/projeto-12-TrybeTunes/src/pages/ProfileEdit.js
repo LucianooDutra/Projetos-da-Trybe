@@ -4,6 +4,7 @@ import Header from '../components/Header';
 import Carregando from '../components/Carregando';
 import semImagem from '../images/semImagem.png';
 import { getUser, updateUser } from '../services/userAPI';
+import '../css/profileEdit.css';
 
 class ProfileEdit extends React.Component {
   state = {
@@ -69,68 +70,70 @@ class ProfileEdit extends React.Component {
   perfil = () => {
     const { description, email, image, name, disabled } = this.state;
     return (
-      <form>
+      <form className="form-horizontal">
         <div>
-          <img src={ image || semImagem } alt={ name } />
+          <img src={ image || semImagem } alt={ name } width="200px" />
         </div>
-        <div>
-          <label htmlFor="NomeUsuario">
-            Nome
-            <input
-              type="text"
-              id="NomeUsuario"
-              placeholder="Seu nome de perfil"
-              data-testid="edit-input-name"
-              onChange={ this.handleChange }
-              name="name"
-              value={ name }
-            />
-          </label>
-          <label htmlFor="EmailUsuario">
-            Email
-            <input
-              type="email"
-              id="EmailUsuario"
-              placeholder="Seu email de cadastro"
-              data-testid="edit-input-email"
-              onChange={ this.handleChange }
-              name="email"
-              value={ email }
-            />
-          </label>
-          <label htmlFor="DescricaolUsuario">
-            Descrição
-            <textarea
-              id="DescricaolUsuario"
-              placeholder="Uma breve descrição sobre você"
-              data-testid="edit-input-description"
-              onChange={ this.handleChange }
-              name="description"
-              value={ description }
-            />
-          </label>
-          <label htmlFor="FotoUsuario">
-            Imagem
-            <input
-              type="text"
-              id="FotoUsuario"
-              placeholder="Sua foto de perfil"
-              data-testid="edit-input-image"
-              onChange={ this.handleChange }
-              name="image"
-              value={ image }
-            />
-          </label>
-        </div>
-        <div>
-          <button
-            type="button"
-            data-testid="edit-button-save"
-            disabled={ disabled }
-            onClick={ this.atualizarPerfil }
-          >
-            Salvar
-          </button>
+        <div className="form-group">
+          <div className="col-data">
+            <label htmlFor="NomeUsuario">
+              Nome
+              <input
+                type="text"
+                id="NomeUsuario"
+                placeholder="Seu nome de perfil"
+                data-testid="edit-input-name"
+                onChange={ this.handleChange }
+                name="name"
+                value={ name }
+              />
+            </label>
+            <label htmlFor="EmailUsuario">
+              Email
+              <input
+                type="email"
+                id="EmailUsuario"
+                placeholder="Seu email de cadastro"
+                data-testid="edit-input-email"
+                onChange={ this.handleChange }
+                name="email"
+                value={ email }
+              />
+            </label>
+            <label htmlFor="DescricaolUsuario">
+              Descrição
+              <textarea
+                id="DescricaolUsuario"
+                placeholder="Uma breve descrição sobre você"
+                data-testid="edit-input-description"
+                onChange={ this.handleChange }
+                name="description"
+                value={ description }
+              />
+            </label>
+            <label htmlFor="FotoUsuario">
+              Imagem
+              <input
+                type="text"
+                id="FotoUsuario"
+                placeholder="Sua foto de perfil"
+                data-testid="edit-input-image"
+                onChange={ this.handleChange }
+                name="image"
+                value={ image }
+              />
+            </label>
+          </div>
+          <div>
+            <button
+              type="button"
+              data-testid="edit-button-save"
+              disabled={ disabled }
+              onClick={ this.atualizarPerfil }
+            >
+              Salvar
+            </button>
+          </div>
         </div>
       </form>
     );
@@ -139,15 +142,14 @@ class ProfileEdit extends React.Component {
   render() {
     const { carregando, redirecionar } = this.state;
     return (
-      <div data-testid="page-profile-edit">
+      <div className="page-profile-edit" data-testid="page-profile-edit">
         <div>
           <Header />
         </div>
-        <div>
+        <div className="page-profile-edit-data">
           { redirecionar && <Redirect to="/profile" /> }
           { carregando ? <Carregando /> : this.perfil() }
         </div>
-        <p>ProfileEdit</p>
       </div>
     );
   }

@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import Header from '../components/Header';
 import getMusics from '../services/musicsAPI';
 import MusicCard from '../components/MusicCard';
+import '../css/album.css';
 
 class Album extends React.Component {
   state = {
@@ -21,10 +22,12 @@ class Album extends React.Component {
     if (musicas) {
       const { artistName, collectionName, artworkUrl100 } = musicas[0];
       return (
-        <div>
+        <div className="albumCard">
           <img src={ artworkUrl100 } alt={ collectionName } />
-          <h4 data-testid="artist-name">{artistName}</h4>
-          <h5 data-testid="album-name">{collectionName}</h5>
+          <div className="albumInterName">
+            <h4 data-testid="artist-name">{artistName}</h4>
+            <h5 data-testid="album-name">{collectionName}</h5>
+          </div>
         </div>
       );
     }
@@ -51,13 +54,12 @@ class Album extends React.Component {
 
     render() {
       return (
-        <div data-testid="page-album">
+        <div className="pageAlbum" data-testid="page-album">
           <Header />
           { this.album() }
-          <div>
+          <div className="AllMusicCards">
             { this.musicas() }
           </div>
-          <p>Album</p>
         </div>
       );
     }
