@@ -103,6 +103,7 @@ Para realizar as requisições em back-end, você pode usar a extensão Thunder 
  - Para atualizar dados do cadastro do carro, utilizar o método PUT com a URL http://localhost:3001/cars/"ID GERADO NO CADASTRO" e na aba Body o json abaixo:
  
    ```json
+   
   {
     "model": "Gol",
     "year": 2000,
