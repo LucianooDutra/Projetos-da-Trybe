@@ -118,6 +118,7 @@ Para realizar as requisições em back-end, você pode usar a extensão Thunder 
   - Para excluir um carro pelo seu id, utilize o método DELETE com a URL http://localhost:3001/cars/"ID GERADO NO CADASTRO";
 
 </details>
+</details>
 
 <details>
  <summary><strong>Motorcycle</strong></summary><br />
@@ -157,6 +158,7 @@ Para realizar as requisições em back-end, você pode usar a extensão Thunder 
   - Para excluir uma moto pelo seu id, utilize o método DELETE com a URL http://localhost:3001/motorcycles/"ID GERADO NO CADASTRO";
 
 </details>
+</details>
 
 ## Executando os testes
 
@@ -175,4 +177,5 @@ Para realizar as requisições em back-end, você pode usar a extensão Thunder 
     npm run test:mocha
   ```
 
+</details>
 </details>
