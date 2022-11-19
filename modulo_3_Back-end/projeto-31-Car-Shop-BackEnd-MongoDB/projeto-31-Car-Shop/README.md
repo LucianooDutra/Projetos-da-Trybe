@@ -19,6 +19,18 @@
  
 ## Executando a aplicação
 
+## Instalando as dependências
+
+<details>
+
+  ```json
+    git clone git@github.com:LucianooDutra/Projetos-da-Trybe.git
+    cd modulo_3_Back-end/projeto-31-Car-Shop-BackEnd-MongoDB/projeto-31-Car-Shop/ 
+    npm install
+  ```
+
+</details>
+
 <details>
 
 ## Utilizando o Docker
